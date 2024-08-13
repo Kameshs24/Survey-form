@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+      <h1 id="title">Zeed</h1>
+      <p id="description">All jewellery saving plan in #1App</p>
+      <div id="Container">
+      <form id="survey-form" method="post">
+       <div>
+            <label id="name-label" for="username">Name: </label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+       </div>
+        <label id="email-label" for="email">Email: </label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
+        <label id="number-label" for="age">Age: </label><br>
+        <input type="number" id="number" name="number" placeholder="Enter age" required min="18" max="11165"><span class="error" id="ageError"></span><br>
+        <label id="segment-label" for="segment">Which Segment you are looking for:</label><br>
+        <select id="dropdown" name="dropdown">
+            <option value="">Select a segment</option>
+            <option value="gold">Gold</option>
+            <option value="diamond">Diamond</option>
+            <option value="silver">Silver</option>
+            <option value="platinum">Platinum</option>
+            <option value="coins">Gold coins</option>
+        </select><br>
+        <label>Select the purpose you are looking for:</label><br>
+        <input type="radio" id="savingPlan" name="purpose" value="savingPlan">
+        <label for="savingPlan">Start Saving Plan</label><br>
+        <input type="radio" id="goldExchange" name="purpose" value="goldExchange">
+        <label for="goldExchange">Gold Exchange</label><br>
+        <label for="brand">Choose your Brand:</label><br>
+        <select id="brand" name="brand">
+            <option value="">Select a brand</option>
+            <option value="grtJewellers">GRT Jewellers</option>
+            <option value="princeJewellery">Prince Jewellery</option>
+            <option value="lalithaJewellery">Lalitha Jewellery</option>
+            <option value="joyAlukkas">Joy Alukkas</option>
+            <option value="khazanaJewellery">Khazana Jewellery</option>
+            <option value="bhimaJewellers">Bhima Jewellers</option>
+        </select><br>
+       <h4>How did you know about us?</h4>
+        <label>
+            <input type="checkbox" name="source" value="socialMedia">
+            Social media
+        </label><br>
+
+        <label>
+            <input type="checkbox" name="source" value="linkedIn">
+            LinkedIn
+        </label><br>
+
+        <label>
+            <input type="checkbox" name="source" value="friend">
+            By a friend
+        </label><br>
+        <label>
+            <input type="checkbox" name="source" value="friend">
+            Co-worker
+        </label><br>
+        <label>
+            <input type="checkbox" name="source" value="friend">
+            Other
+        </label><br>
+        
+
+         <label for="comments">Enter your comments or suggestions:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter your comments or suggestions"></textarea><br>
+       
+        
+        
+         <input class="submit-button" id="submit" type="submit" value="Submit" name="submit">
+         
+         
+        </form></div>
+      </body>
+  </html>

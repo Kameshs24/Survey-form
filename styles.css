@@ -1,0 +1,41 @@
+body{
+  
+}
+h1{
+  text-align: center;
+  margin-top: 50px;
+  color: darkorange;
+}
+#description{
+  text-align: center;
+  margin-top: 10px !important;
+  font-family: Sans-serif;
+}
+#Container{
+    width: 80%;
+    padding: 20px 40px;
+    background-color: #FFCC99;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    display: flex;
+    flex-direction: flex-column
+   
+}
+.submit-button {
+        margin: 15px auto 0;
+        /* margin-top: 15px; */
+        background-color:grey;
+        color: white;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        text-align: center;
+        
+    }
+      .submit-button:hover {
+        background-color: orange;
+    }
+
